@@ -1,6 +1,6 @@
-# Dzyneco — CRM Template for WhatsApp
+# Dzyneco WhatsApp CRM
 
-> Self-hostable CRM template for WhatsApp® — shared inbox, contacts,
+> Self-hostable WhatsApp CRM — shared inbox, contacts,
 > sales pipelines, broadcasts, and no-code automations. Fork it, brand
 > it, host it.
 
