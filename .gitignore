@@ -43,5 +43,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# graphify knowledge graph (generated)
+graphify-out/
+
 # supabase
 supabase/.temp/
