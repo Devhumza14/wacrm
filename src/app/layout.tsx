@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
-  icons: {
-    icon: [{ url: "/icon" }],
-  },
+  // No explicit `icons` entry: Next picks up src/app/icon.png by file
+  // convention and emits a hashed <link rel="icon">. Hard-coding a URL
+  // here overrides that and breaks when the source file changes.
   formatDetection: {
     email: false,
     address: false,
