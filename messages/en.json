@@ -1916,7 +1916,11 @@
     "emailLabel": "Email",
     "emailPlaceholder": "you@example.com",
     "sending": "Sending...",
-    "sendLink": "Send reset link"
+    "sendLink": "Send reset link",
+    "linkInvalid": "That reset link is invalid or has expired. Request a new one below."
+  },
+  "ResetPasswordPage": {
+    "title": "Set a new password"
   },
   "JoinPage": {
     "fail": {

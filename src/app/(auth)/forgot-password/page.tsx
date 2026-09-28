@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -17,10 +18,23 @@ import {
 } from "@/components/ui/card";
 import {CheckCircle, ArrowLeft} from "lucide-react";
 
+// useSearchParams needs a Suspense boundary on a statically rendered page.
 export default function ForgotPasswordPage() {
+  return (
+    <Suspense fallback={null}>
+      <ForgotPasswordPageInner />
+    </Suspense>
+  );
+}
+
+function ForgotPasswordPageInner() {
   const t = useTranslations("ForgotPasswordPage");
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  // /auth/callback sends people back here when a reset link is expired or used.
+  const [error, setError] = useState<string | null>(
+    searchParams.get("error") === "link_invalid" ? t("linkInvalid") : null,
+  );
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const supabase = createClient();

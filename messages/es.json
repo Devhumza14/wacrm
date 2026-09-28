@@ -1916,7 +1916,11 @@
     "emailLabel": "Correo electrónico",
     "emailPlaceholder": "you@example.com",
     "sending": "Enviando...",
-    "sendLink": "Enviar enlace de restablecimiento"
+    "sendLink": "Enviar enlace de restablecimiento",
+    "linkInvalid": "Ese enlace de restablecimiento no es válido o ha caducado. Solicita uno nuevo abajo."
+  },
+  "ResetPasswordPage": {
+    "title": "Establece una nueva contraseña"
   },
   "JoinPage": {
     "fail": {

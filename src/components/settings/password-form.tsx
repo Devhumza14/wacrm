@@ -18,7 +18,7 @@ import {
 } from '@/components/ui/card';
 import { useTranslations } from 'next-intl';
 
-const MIN_PASSWORD = 8;
+export const MIN_PASSWORD = 8;
 
 export function PasswordForm() {
   const t = useTranslations('Settings.profile');

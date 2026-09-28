@@ -1916,7 +1916,11 @@
     "emailLabel": "E-mail",
     "emailPlaceholder": "you@example.com",
     "sending": "Enviando...",
-    "sendLink": "Enviar link de redefinição"
+    "sendLink": "Enviar link de redefinição",
+    "linkInvalid": "Esse link de redefinição é inválido ou expirou. Solicite um novo abaixo."
+  },
+  "ResetPasswordPage": {
+    "title": "Defina uma nova senha"
   },
   "JoinPage": {
     "fail": {
