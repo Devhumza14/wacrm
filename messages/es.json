@@ -2130,7 +2130,7 @@
     },
     "aiConfig": {
       "title": "Configuración del agente",
-      "description": "Usa tu propia clave de OpenAI, Anthropic o de una API compatible con OpenAI. wacrm llama al proveedor directamente con tu clave, sin cargos de IA por puesto, y tus datos siguen siendo tuyos. Esto impulsa las respuestas redactadas por IA, el bot de respuesta automática y el Playground.",
+      "description": "Usa tu propia clave de OpenAI, Anthropic o de una API compatible con OpenAI. Dzyneco llama al proveedor directamente con tu clave, sin cargos de IA por puesto, y tus datos siguen siendo tuyos. Esto impulsa las respuestas redactadas por IA, el bot de respuesta automática y el Playground.",
       "adminOnlyConfig": "Solo los administradores y propietarios pueden cambiar la configuración de IA.",
       "loadFailed": "Error al cargar la configuración de IA",
       "providerAndKey": "Proveedor y clave",
