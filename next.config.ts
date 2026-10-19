@@ -79,6 +79,8 @@ const nextConfig: NextConfig = {
   output: "standalone",
   experimental: {
     turbopackPluginRuntimeStrategy: "workerThreads",
+    // Hostinger's build box caps threads; the default (one worker per core, 63 there) aborts "Collecting page data".
+    cpus: 2,
   },
   // Stop `next dev` from overwriting the repo's hand-written AGENTS.md.
   agentRules: false,
